@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
 <body>
+
 <h1 th:text="${title}">Default Header</h1>
 
 <nav th:replace="fragments :: navigation"></nav>
@@ -13,6 +14,8 @@
     <input type="text" name="cheeseDesc" id="cheeseDesc"/>
     <input type="submit" value="Add Cheese"/>
 </form>
+
+<p1 th:text="${errorMessage}"></p1>
 
 </body>
 </html>
