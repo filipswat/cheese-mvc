@@ -12,8 +12,8 @@
 <p th:unless="${cheeses} and ${cheeses.size()}">no cheeses to display</p>
 
 <form method="post">
-    <ul th:each="mapItem : ${cheeses}">
-        <input th:text="${mapItem.key}" th:value="${mapItem.key}" name="cheeseName" type="checkbox"/>
+    <ul th:each="cheese : ${cheeses}">
+        <input th:text="${cheese.name}" th:value="${cheese.name}" name="cheeseNames" type="checkbox"/>
     </ul>
     <input type="submit"/>
 </form>

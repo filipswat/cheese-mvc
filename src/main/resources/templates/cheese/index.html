@@ -8,9 +8,9 @@
 
 <p th:unless="${cheeses} and ${cheeses.size()}">no cheese</p>
 
-<dl th:each="mapItem : ${cheeses}">
-    <dt th:text="${mapItem.key}">Key</dt>
-    <dd th:text="${mapItem.value}">Value</dd>
+<dl th:each="cheese : ${cheeses}">
+    <dt th:text="${cheese.name}">Key</dt>
+    <dd th:text="${cheese.description}">Value</dd>
 </dl>
 
 
